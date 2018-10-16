@@ -10,8 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title = "Login"
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -19,6 +21,12 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super .viewDidAppear(animated)
+        navigationController?.navigationBar.isHidden = true
+    }
+    
 
 
 }
