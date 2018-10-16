@@ -7,3 +7,17 @@
 //
 
 import Foundation
+import SwiftyJSON
+class PostsDTO {
+    var userID: Int
+    var id: Int
+    var title: String
+    var body: String
+    
+    init(_ json: JSON) {
+        self.userID = json["userId"].intValue
+        self.id = json["id"].intValue
+        self.title = json["title"].stringValue
+        self.body = json["body"].stringValue
+    }
+}

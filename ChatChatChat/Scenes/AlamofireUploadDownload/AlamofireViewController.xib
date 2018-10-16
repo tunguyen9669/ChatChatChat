@@ -1,13 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AlamofireViewController" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AlamofireViewController" customModule="ChatChatChat" customModuleProvider="target">
             <connections>
+                <outlet property="imageView" destination="LIs-1f-SFx" id="AC6-m1-KUo"/>
+                <outlet property="indicatorActivity" destination="Bmh-hc-JGC" id="l0Z-mE-7sC"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -15,7 +21,49 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LIs-1f-SFx">
+                    <rect key="frame" x="67.5" y="131" width="240" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="240" id="0VX-j1-V99"/>
+                        <constraint firstAttribute="height" constant="128" id="QoH-uD-Znc"/>
+                    </constraints>
+                </imageView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Bmh-hc-JGC">
+                    <rect key="frame" x="67.5" y="307" width="240" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="HLq-YE-ckf"/>
+                    </constraints>
+                </activityIndicatorView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LeX-RF-cGG">
+                    <rect key="frame" x="67.5" y="413" width="240" height="30"/>
+                    <state key="normal" title="Download"/>
+                    <connections>
+                        <action selector="onDownload:" destination="-1" eventType="touchUpInside" id="frl-G2-GZ1"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J5n-gv-c6Y">
+                    <rect key="frame" x="67.5" y="482" width="240" height="30"/>
+                    <state key="normal" title="View"/>
+                    <connections>
+                        <action selector="onView:" destination="-1" eventType="touchUpInside" id="Xa9-2q-Lqe"/>
+                    </connections>
+                </button>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Bmh-hc-JGC" firstAttribute="trailing" secondItem="LIs-1f-SFx" secondAttribute="trailing" id="7Ch-Lo-Iqr"/>
+                <constraint firstItem="J5n-gv-c6Y" firstAttribute="top" secondItem="LeX-RF-cGG" secondAttribute="bottom" constant="39" id="DV2-au-Dus"/>
+                <constraint firstItem="LIs-1f-SFx" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="111" id="I3n-55-WXX"/>
+                <constraint firstItem="LIs-1f-SFx" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="J8P-qT-naG"/>
+                <constraint firstItem="Bmh-hc-JGC" firstAttribute="leading" secondItem="LIs-1f-SFx" secondAttribute="leading" id="MxM-uk-dwS"/>
+                <constraint firstItem="LeX-RF-cGG" firstAttribute="trailing" secondItem="Bmh-hc-JGC" secondAttribute="trailing" id="PsS-p4-xZX"/>
+                <constraint firstItem="Bmh-hc-JGC" firstAttribute="top" secondItem="LIs-1f-SFx" secondAttribute="bottom" constant="48" id="et7-ma-SXG"/>
+                <constraint firstItem="J5n-gv-c6Y" firstAttribute="trailing" secondItem="LeX-RF-cGG" secondAttribute="trailing" id="nt4-Gt-2Rz"/>
+                <constraint firstItem="J5n-gv-c6Y" firstAttribute="leading" secondItem="LeX-RF-cGG" secondAttribute="leading" id="q2o-q8-bSq"/>
+                <constraint firstItem="LeX-RF-cGG" firstAttribute="leading" secondItem="Bmh-hc-JGC" secondAttribute="leading" id="scW-C7-i0K"/>
+                <constraint firstItem="LeX-RF-cGG" firstAttribute="top" secondItem="Bmh-hc-JGC" secondAttribute="bottom" constant="66" id="tmL-B9-zBd"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>
     </objects>

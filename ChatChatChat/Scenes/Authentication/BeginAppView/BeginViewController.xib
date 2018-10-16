@@ -1,12 +1,21 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BeginViewController" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BeginViewController" customModule="ChatChatChat" customModuleProvider="target">
             <connections>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -15,8 +24,98 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome" translatesAutoresizingMaskIntoConstraints="NO" id="Dz0-ts-osU">
+                    <rect key="frame" x="67.5" y="119" width="240" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="128" id="dpm-KS-dQE"/>
+                        <constraint firstAttribute="width" constant="240" id="qPs-Yr-8uR"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fac-PR-I5I">
+                    <rect key="frame" x="87.5" y="457" width="200" height="60"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="16"/>
+                    <state key="normal" title="Đăng kí">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UU9-T8-hMG">
+                    <rect key="frame" x="87.5" y="542" width="200" height="60"/>
+                    <color key="backgroundColor" red="0.93488236011001113" green="0.87619347797261427" blue="0.098185394445465118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="16"/>
+                    <state key="normal" title="Alamofire">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="alamofireExampleAction:" destination="-1" eventType="touchUpInside" id="WYZ-SE-WIh"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YS6-9m-YFg">
+                    <rect key="frame" x="95" y="298" width="185" height="31"/>
+                    <attributedString key="attributedText">
+                        <fragment content="ChatChatChat!">
+                            <attributes>
+                                <font key="NSFont" size="25" name="AmericanTypewriter-Bold"/>
+                                <font key="NSOriginalFont" size="25" name="AmericanTypewriter-Bold"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MZZ-j2-DMP">
+                    <rect key="frame" x="179.5" y="265" width="16" height="25"/>
+                    <attributedString key="attributedText">
+                        <fragment content="to">
+                            <attributes>
+                                <color key="NSColor" red="0.0" green="0.71764705882352942" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" size="20" name="Didot-Italic"/>
+                                <font key="NSOriginalFont" size="20" name="Didot-Italic"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JyS-lo-6r3">
+                    <rect key="frame" x="87.5" y="372" width="200" height="60"/>
+                    <color key="backgroundColor" red="0.0" green="0.71764705882352942" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="9fY-r7-T6E"/>
+                        <constraint firstAttribute="width" constant="200" id="HGp-O4-tP9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="16"/>
+                    <state key="normal" title="Đăng nhập">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="onLogin:" destination="-1" eventType="touchUpInside" id="80G-eS-fRi"/>
+                    </connections>
+                </button>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="UU9-T8-hMG" firstAttribute="height" secondItem="fac-PR-I5I" secondAttribute="height" id="3y8-2X-9pf"/>
+                <constraint firstItem="fac-PR-I5I" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="70J-pa-wgm"/>
+                <constraint firstItem="MZZ-j2-DMP" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="96K-sv-rcQ"/>
+                <constraint firstItem="MZZ-j2-DMP" firstAttribute="top" secondItem="Dz0-ts-osU" secondAttribute="bottom" constant="18" id="BNR-JA-00O"/>
+                <constraint firstItem="YS6-9m-YFg" firstAttribute="top" secondItem="MZZ-j2-DMP" secondAttribute="bottom" constant="8" id="ON6-AY-BGJ"/>
+                <constraint firstItem="JyS-lo-6r3" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Q7I-cJ-Cjv"/>
+                <constraint firstItem="Dz0-ts-osU" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="aeI-xh-VJP"/>
+                <constraint firstItem="Dz0-ts-osU" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="99" id="iV3-Uk-qcP"/>
+                <constraint firstItem="fac-PR-I5I" firstAttribute="top" secondItem="JyS-lo-6r3" secondAttribute="bottom" constant="25" id="jUt-MX-UIT"/>
+                <constraint firstItem="UU9-T8-hMG" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="pJR-a4-tS9"/>
+                <constraint firstItem="fac-PR-I5I" firstAttribute="height" secondItem="JyS-lo-6r3" secondAttribute="height" id="pKD-Pe-xYl"/>
+                <constraint firstItem="JyS-lo-6r3" firstAttribute="top" secondItem="YS6-9m-YFg" secondAttribute="bottom" constant="43" id="qEz-DU-VzV"/>
+                <constraint firstItem="fac-PR-I5I" firstAttribute="width" secondItem="JyS-lo-6r3" secondAttribute="width" id="rlF-eW-V4R"/>
+                <constraint firstItem="UU9-T8-hMG" firstAttribute="top" secondItem="fac-PR-I5I" secondAttribute="bottom" constant="25" id="rmS-1K-9dC"/>
+                <constraint firstItem="UU9-T8-hMG" firstAttribute="width" secondItem="fac-PR-I5I" secondAttribute="width" id="thh-mb-vPD"/>
+                <constraint firstItem="YS6-9m-YFg" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="v6W-Dk-UTz"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="34.5" y="53.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="welcome" width="612" height="272"/>
+    </resources>
 </document>

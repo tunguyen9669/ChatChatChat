@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36F2829D5F0129FCD166F3B7 /* Pods_ChatChatChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC72348BF3DDE05AD4D07F2D /* Pods_ChatChatChat.framework */; };
+		84CB04712174765C009525B2 /* APIServiceAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CB04702174765C009525B2 /* APIServiceAgent.swift */; };
+		84CB0473217476E6009525B2 /* APIServiceObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CB0472217476E6009525B2 /* APIServiceObject.swift */; };
+		84CB047521747716009525B2 /* APIRequestProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CB047421747716009525B2 /* APIRequestProvider.swift */; };
+		84CB04772174775B009525B2 /* PostServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CB04762174775B009525B2 /* PostServices.swift */; };
+		84CB047921748927009525B2 /* GetPostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CB047821748927009525B2 /* GetPostService.swift */; };
+		84CB047B21748A6F009525B2 /* FirstPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CB047A21748A6F009525B2 /* FirstPresenter.swift */; };
+		84CB047E21748FB3009525B2 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CB047C21748FB3009525B2 /* PostViewController.swift */; };
+		84CB047F21748FB3009525B2 /* PostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84CB047D21748FB3009525B2 /* PostViewController.xib */; };
+		84EC3FD92174505B00BC2E7D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EC3FD82174505B00BC2E7D /* User.swift */; };
+		84EC3FDC217450D600BC2E7D /* VCPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EC3FDB217450D600BC2E7D /* VCPresenter.swift */; };
+		84EC3FE52174712A00BC2E7D /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EC3FE32174712A00BC2E7D /* PostTableViewCell.swift */; };
+		84EC3FE62174712A00BC2E7D /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84EC3FE42174712A00BC2E7D /* PostTableViewCell.xib */; };
+		84EC3FE9217471AF00BC2E7D /* PostDTOs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EC3FE8217471AF00BC2E7D /* PostDTOs.swift */; };
+		84EC3FEB217472F200BC2E7D /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EC3FEA217472F200BC2E7D /* Post.swift */; };
+		84ED2F742175815600176011 /* AlamofireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ED2F722175815600176011 /* AlamofireViewController.swift */; };
+		84ED2F752175815600176011 /* AlamofireViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84ED2F732175815600176011 /* AlamofireViewController.xib */; };
 		84F3761921718AB300A5B970 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F3761821718AB300A5B970 /* AppDelegate.swift */; };
 		84F3761B21718AB300A5B970 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F3761A21718AB300A5B970 /* ViewController.swift */; };
 		84F3761E21718AB300A5B970 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F3761C21718AB300A5B970 /* Main.storyboard */; };
@@ -14,6 +31,29 @@
 		84F3762321718AB400A5B970 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F3762121718AB400A5B970 /* LaunchScreen.storyboard */; };
 		84F3762E21718AB500A5B970 /* ChatChatChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F3762D21718AB500A5B970 /* ChatChatChatTests.swift */; };
 		84F3763921718AB500A5B970 /* ChatChatChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F3763821718AB500A5B970 /* ChatChatChatUITests.swift */; };
+		84F3765B21718B0400A5B970 /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84F3764821718B0100A5B970 /* Roboto-BlackItalic.ttf */; };
+		84F3765C21718B0400A5B970 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84F3764921718B0100A5B970 /* Roboto-Black.ttf */; };
+		84F3765D21718B0400A5B970 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84F3764A21718B0100A5B970 /* Roboto-Bold.ttf */; };
+		84F3765E21718B0400A5B970 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84F3764B21718B0200A5B970 /* Roboto-Light.ttf */; };
+		84F3765F21718B0400A5B970 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84F3764C21718B0200A5B970 /* Roboto-ThinItalic.ttf */; };
+		84F3766021718B0400A5B970 /* RobotoCondensed-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84F3764D21718B0200A5B970 /* RobotoCondensed-BoldItalic.ttf */; };
+		84F3766121718B0400A5B970 /* Apache License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 84F3764E21718B0200A5B970 /* Apache License.txt */; };
+		84F3766221718B0400A5B970 /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84F3764F21718B0200A5B970 /* Roboto-Italic.ttf */; };
+		84F3766321718B0400A5B970 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84F3765021718B0200A5B970 /* Roboto-Thin.ttf */; };
+		84F3766421718B0400A5B970 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84F3765121718B0200A5B970 /* Roboto-Regular.ttf */; };
+		84F3766521718B0400A5B970 /* RobotoCondensed-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84F3765221718B0300A5B970 /* RobotoCondensed-Italic.ttf */; };
+		84F3766621718B0400A5B970 /* RobotoCondensed-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84F3765321718B0300A5B970 /* RobotoCondensed-Light.ttf */; };
+		84F3766721718B0400A5B970 /* RobotoCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84F3765421718B0300A5B970 /* RobotoCondensed-Regular.ttf */; };
+		84F3766821718B0400A5B970 /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84F3765521718B0300A5B970 /* Roboto-BoldItalic.ttf */; };
+		84F3766921718B0400A5B970 /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84F3765621718B0300A5B970 /* Roboto-MediumItalic.ttf */; };
+		84F3766A21718B0400A5B970 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84F3765721718B0400A5B970 /* Roboto-Medium.ttf */; };
+		84F3766B21718B0400A5B970 /* RobotoCondensed-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84F3765821718B0400A5B970 /* RobotoCondensed-Bold.ttf */; };
+		84F3766C21718B0400A5B970 /* RobotoCondensed-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84F3765921718B0400A5B970 /* RobotoCondensed-LightItalic.ttf */; };
+		84F3766D21718B0400A5B970 /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84F3765A21718B0400A5B970 /* Roboto-LightItalic.ttf */; };
+		84F37675217196DB00A5B970 /* BeginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F37673217196DB00A5B970 /* BeginViewController.swift */; };
+		84F37676217196DB00A5B970 /* BeginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84F37674217196DB00A5B970 /* BeginViewController.xib */; };
+		A46EAAB40155B83924ECF2FE /* Pods_ChatChatChatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C10B451212F59F102E24C201 /* Pods_ChatChatChatTests.framework */; };
+		C7A8BB350A2311058C4E9E0B /* Pods_ChatChatChatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68C3ED08448DAA4F5F96A380 /* Pods_ChatChatChatUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +74,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		036F4965D6E0B9272C6DB5B1 /* Pods-ChatChatChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatChatChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChatChatChat/Pods-ChatChatChat.debug.xcconfig"; sourceTree = "<group>"; };
+		0DFEE7734D6177ABB461C451 /* Pods-ChatChatChatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatChatChatTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChatChatChatTests/Pods-ChatChatChatTests.release.xcconfig"; sourceTree = "<group>"; };
+		224CC9D9692FBF643D4C851A /* Pods-ChatChatChatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatChatChatUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChatChatChatUITests/Pods-ChatChatChatUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		35E51359E36B5F19B0A49ECA /* Pods-ChatChatChatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatChatChatUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChatChatChatUITests/Pods-ChatChatChatUITests.release.xcconfig"; sourceTree = "<group>"; };
+		68C3ED08448DAA4F5F96A380 /* Pods_ChatChatChatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatChatChatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84CB04702174765C009525B2 /* APIServiceAgent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceAgent.swift; sourceTree = "<group>"; };
+		84CB0472217476E6009525B2 /* APIServiceObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceObject.swift; sourceTree = "<group>"; };
+		84CB047421747716009525B2 /* APIRequestProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestProvider.swift; sourceTree = "<group>"; };
+		84CB04762174775B009525B2 /* PostServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostServices.swift; sourceTree = "<group>"; };
+		84CB047821748927009525B2 /* GetPostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPostService.swift; sourceTree = "<group>"; };
+		84CB047A21748A6F009525B2 /* FirstPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPresenter.swift; sourceTree = "<group>"; };
+		84CB047C21748FB3009525B2 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		84CB047D21748FB3009525B2 /* PostViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostViewController.xib; sourceTree = "<group>"; };
+		84EC3FD82174505B00BC2E7D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		84EC3FDB217450D600BC2E7D /* VCPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCPresenter.swift; sourceTree = "<group>"; };
+		84EC3FE32174712A00BC2E7D /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		84EC3FE42174712A00BC2E7D /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
+		84EC3FE8217471AF00BC2E7D /* PostDTOs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDTOs.swift; sourceTree = "<group>"; };
+		84EC3FEA217472F200BC2E7D /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		84ED2F722175815600176011 /* AlamofireViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireViewController.swift; sourceTree = "<group>"; };
+		84ED2F732175815600176011 /* AlamofireViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlamofireViewController.xib; sourceTree = "<group>"; };
 		84F3761521718AB300A5B970 /* ChatChatChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatChatChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F3761821718AB300A5B970 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84F3761A21718AB300A5B970 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +108,31 @@
 		84F3763421718AB500A5B970 /* ChatChatChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatChatChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F3763821718AB500A5B970 /* ChatChatChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatChatChatUITests.swift; sourceTree = "<group>"; };
 		84F3763A21718AB500A5B970 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84F3764821718B0100A5B970 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		84F3764921718B0100A5B970 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		84F3764A21718B0100A5B970 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		84F3764B21718B0200A5B970 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		84F3764C21718B0200A5B970 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		84F3764D21718B0200A5B970 /* RobotoCondensed-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-BoldItalic.ttf"; sourceTree = "<group>"; };
+		84F3764E21718B0200A5B970 /* Apache License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Apache License.txt"; sourceTree = "<group>"; };
+		84F3764F21718B0200A5B970 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		84F3765021718B0200A5B970 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		84F3765121718B0200A5B970 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		84F3765221718B0300A5B970 /* RobotoCondensed-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Italic.ttf"; sourceTree = "<group>"; };
+		84F3765321718B0300A5B970 /* RobotoCondensed-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Light.ttf"; sourceTree = "<group>"; };
+		84F3765421718B0300A5B970 /* RobotoCondensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Regular.ttf"; sourceTree = "<group>"; };
+		84F3765521718B0300A5B970 /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		84F3765621718B0300A5B970 /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		84F3765721718B0400A5B970 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		84F3765821718B0400A5B970 /* RobotoCondensed-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Bold.ttf"; sourceTree = "<group>"; };
+		84F3765921718B0400A5B970 /* RobotoCondensed-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-LightItalic.ttf"; sourceTree = "<group>"; };
+		84F3765A21718B0400A5B970 /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		84F37673217196DB00A5B970 /* BeginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginViewController.swift; sourceTree = "<group>"; };
+		84F37674217196DB00A5B970 /* BeginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeginViewController.xib; sourceTree = "<group>"; };
+		8561CE7585D56D40925B0218 /* Pods-ChatChatChatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatChatChatTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChatChatChatTests/Pods-ChatChatChatTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C10B451212F59F102E24C201 /* Pods_ChatChatChatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatChatChatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA8E1B133550A912607FEC74 /* Pods-ChatChatChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatChatChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChatChatChat/Pods-ChatChatChat.release.xcconfig"; sourceTree = "<group>"; };
+		FC72348BF3DDE05AD4D07F2D /* Pods_ChatChatChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatChatChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +140,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36F2829D5F0129FCD166F3B7 /* Pods_ChatChatChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +148,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A46EAAB40155B83924ECF2FE /* Pods_ChatChatChatTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +156,102 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7A8BB350A2311058C4E9E0B /* Pods_ChatChatChatUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		121E2D6C1FE6CADE6DBC7FFA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				036F4965D6E0B9272C6DB5B1 /* Pods-ChatChatChat.debug.xcconfig */,
+				CA8E1B133550A912607FEC74 /* Pods-ChatChatChat.release.xcconfig */,
+				8561CE7585D56D40925B0218 /* Pods-ChatChatChatTests.debug.xcconfig */,
+				0DFEE7734D6177ABB461C451 /* Pods-ChatChatChatTests.release.xcconfig */,
+				224CC9D9692FBF643D4C851A /* Pods-ChatChatChatUITests.debug.xcconfig */,
+				35E51359E36B5F19B0A49ECA /* Pods-ChatChatChatUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6DE74A51278D99B9DC4F863C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC72348BF3DDE05AD4D07F2D /* Pods_ChatChatChat.framework */,
+				C10B451212F59F102E24C201 /* Pods_ChatChatChatTests.framework */,
+				68C3ED08448DAA4F5F96A380 /* Pods_ChatChatChatUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84CB046F21747622009525B2 /* APIService */ = {
+			isa = PBXGroup;
+			children = (
+				84CB04702174765C009525B2 /* APIServiceAgent.swift */,
+				84CB0472217476E6009525B2 /* APIServiceObject.swift */,
+				84CB047421747716009525B2 /* APIRequestProvider.swift */,
+				84CB04762174775B009525B2 /* PostServices.swift */,
+				84CB047821748927009525B2 /* GetPostService.swift */,
+			);
+			path = APIService;
+			sourceTree = "<group>";
+		};
+		84EC3FD72174504600BC2E7D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				84EC3FD82174505B00BC2E7D /* User.swift */,
+				84EC3FEA217472F200BC2E7D /* Post.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		84EC3FDA217450C500BC2E7D /* Peresenter */ = {
+			isa = PBXGroup;
+			children = (
+				84EC3FDB217450D600BC2E7D /* VCPresenter.swift */,
+				84CB047A21748A6F009525B2 /* FirstPresenter.swift */,
+			);
+			path = Peresenter;
+			sourceTree = "<group>";
+		};
+		84EC3FDD21746FF200BC2E7D /* PostTest */ = {
+			isa = PBXGroup;
+			children = (
+				84EC3FE22174710400BC2E7D /* Cell */,
+				84CB047C21748FB3009525B2 /* PostViewController.swift */,
+				84CB047D21748FB3009525B2 /* PostViewController.xib */,
+			);
+			path = PostTest;
+			sourceTree = "<group>";
+		};
+		84EC3FE22174710400BC2E7D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				84EC3FE32174712A00BC2E7D /* PostTableViewCell.swift */,
+				84EC3FE42174712A00BC2E7D /* PostTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		84EC3FE72174719900BC2E7D /* DTOs */ = {
+			isa = PBXGroup;
+			children = (
+				84EC3FE8217471AF00BC2E7D /* PostDTOs.swift */,
+			);
+			path = DTOs;
+			sourceTree = "<group>";
+		};
+		84ED2F712175812000176011 /* AlamofireUploadDownload */ = {
+			isa = PBXGroup;
+			children = (
+				84ED2F722175815600176011 /* AlamofireViewController.swift */,
+				84ED2F732175815600176011 /* AlamofireViewController.xib */,
+			);
+			path = AlamofireUploadDownload;
+			sourceTree = "<group>";
+		};
 		84F3760C21718AB300A5B970 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +259,8 @@
 				84F3762C21718AB500A5B970 /* ChatChatChatTests */,
 				84F3763721718AB500A5B970 /* ChatChatChatUITests */,
 				84F3761621718AB300A5B970 /* Products */,
+				121E2D6C1FE6CADE6DBC7FFA /* Pods */,
+				6DE74A51278D99B9DC4F863C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,9 +277,11 @@
 		84F3761721718AB300A5B970 /* ChatChatChat */ = {
 			isa = PBXGroup;
 			children = (
+				84F376702171953600A5B970 /* Models */,
+				84F3766F2171952800A5B970 /* Helper */,
+				84F3766E217194EA00A5B970 /* Scenes */,
+				84F3764621718ACA00A5B970 /* Resources */,
 				84F3761821718AB300A5B970 /* AppDelegate.swift */,
-				84F3761A21718AB300A5B970 /* ViewController.swift */,
-				84F3761C21718AB300A5B970 /* Main.storyboard */,
 				84F3761F21718AB400A5B970 /* Assets.xcassets */,
 				84F3762121718AB400A5B970 /* LaunchScreen.storyboard */,
 				84F3762421718AB400A5B970 /* Info.plist */,
@@ -125,6 +307,87 @@
 			path = ChatChatChatUITests;
 			sourceTree = "<group>";
 		};
+		84F3764621718ACA00A5B970 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				84F3764721718AE800A5B970 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		84F3764721718AE800A5B970 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				84F3764E21718B0200A5B970 /* Apache License.txt */,
+				84F3764921718B0100A5B970 /* Roboto-Black.ttf */,
+				84F3764821718B0100A5B970 /* Roboto-BlackItalic.ttf */,
+				84F3764A21718B0100A5B970 /* Roboto-Bold.ttf */,
+				84F3765521718B0300A5B970 /* Roboto-BoldItalic.ttf */,
+				84F3764F21718B0200A5B970 /* Roboto-Italic.ttf */,
+				84F3764B21718B0200A5B970 /* Roboto-Light.ttf */,
+				84F3765A21718B0400A5B970 /* Roboto-LightItalic.ttf */,
+				84F3765721718B0400A5B970 /* Roboto-Medium.ttf */,
+				84F3765621718B0300A5B970 /* Roboto-MediumItalic.ttf */,
+				84F3765121718B0200A5B970 /* Roboto-Regular.ttf */,
+				84F3765021718B0200A5B970 /* Roboto-Thin.ttf */,
+				84F3764C21718B0200A5B970 /* Roboto-ThinItalic.ttf */,
+				84F3765821718B0400A5B970 /* RobotoCondensed-Bold.ttf */,
+				84F3764D21718B0200A5B970 /* RobotoCondensed-BoldItalic.ttf */,
+				84F3765221718B0300A5B970 /* RobotoCondensed-Italic.ttf */,
+				84F3765321718B0300A5B970 /* RobotoCondensed-Light.ttf */,
+				84F3765921718B0400A5B970 /* RobotoCondensed-LightItalic.ttf */,
+				84F3765421718B0300A5B970 /* RobotoCondensed-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		84F3766E217194EA00A5B970 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				84ED2F712175812000176011 /* AlamofireUploadDownload */,
+				84EC3FDD21746FF200BC2E7D /* PostTest */,
+				84F37671217196A200A5B970 /* Authentication */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		84F3766F2171952800A5B970 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				84EC3FDA217450C500BC2E7D /* Peresenter */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		84F376702171953600A5B970 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				84CB046F21747622009525B2 /* APIService */,
+				84EC3FE72174719900BC2E7D /* DTOs */,
+				84EC3FD72174504600BC2E7D /* Models */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		84F37671217196A200A5B970 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				84F37672217196BF00A5B970 /* BeginAppView */,
+				84F3761A21718AB300A5B970 /* ViewController.swift */,
+				84F3761C21718AB300A5B970 /* Main.storyboard */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		84F37672217196BF00A5B970 /* BeginAppView */ = {
+			isa = PBXGroup;
+			children = (
+				84F37673217196DB00A5B970 /* BeginViewController.swift */,
+				84F37674217196DB00A5B970 /* BeginViewController.xib */,
+			);
+			path = BeginAppView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +395,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84F3763D21718AB500A5B970 /* Build configuration list for PBXNativeTarget "ChatChatChat" */;
 			buildPhases = (
+				6DC9E2BE82FA8CFA41A0EEB8 /* [CP] Check Pods Manifest.lock */,
 				84F3761121718AB300A5B970 /* Sources */,
 				84F3761221718AB300A5B970 /* Frameworks */,
 				84F3761321718AB300A5B970 /* Resources */,
+				D11393260CCFE90BF1FDC9EA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +414,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84F3764021718AB500A5B970 /* Build configuration list for PBXNativeTarget "ChatChatChatTests" */;
 			buildPhases = (
+				2FD24EDF5E8679BBBCE1595D /* [CP] Check Pods Manifest.lock */,
 				84F3762521718AB500A5B970 /* Sources */,
 				84F3762621718AB500A5B970 /* Frameworks */,
 				84F3762721718AB500A5B970 /* Resources */,
@@ -167,6 +433,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84F3764321718AB500A5B970 /* Build configuration list for PBXNativeTarget "ChatChatChatUITests" */;
 			buildPhases = (
+				BB239EFBC3BF993E3D362E32 /* [CP] Check Pods Manifest.lock */,
 				84F3763021718AB500A5B970 /* Sources */,
 				84F3763121718AB500A5B970 /* Frameworks */,
 				84F3763221718AB500A5B970 /* Resources */,
@@ -229,9 +496,32 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84F3766821718B0400A5B970 /* Roboto-BoldItalic.ttf in Resources */,
 				84F3762321718AB400A5B970 /* LaunchScreen.storyboard in Resources */,
 				84F3762021718AB400A5B970 /* Assets.xcassets in Resources */,
+				84F3766021718B0400A5B970 /* RobotoCondensed-BoldItalic.ttf in Resources */,
+				84F3766521718B0400A5B970 /* RobotoCondensed-Italic.ttf in Resources */,
+				84F3766621718B0400A5B970 /* RobotoCondensed-Light.ttf in Resources */,
+				84F37676217196DB00A5B970 /* BeginViewController.xib in Resources */,
+				84ED2F752175815600176011 /* AlamofireViewController.xib in Resources */,
+				84F3766B21718B0400A5B970 /* RobotoCondensed-Bold.ttf in Resources */,
+				84F3765D21718B0400A5B970 /* Roboto-Bold.ttf in Resources */,
+				84F3765C21718B0400A5B970 /* Roboto-Black.ttf in Resources */,
+				84F3765F21718B0400A5B970 /* Roboto-ThinItalic.ttf in Resources */,
+				84EC3FE62174712A00BC2E7D /* PostTableViewCell.xib in Resources */,
+				84F3766A21718B0400A5B970 /* Roboto-Medium.ttf in Resources */,
+				84F3765E21718B0400A5B970 /* Roboto-Light.ttf in Resources */,
+				84CB047F21748FB3009525B2 /* PostViewController.xib in Resources */,
+				84F3766D21718B0400A5B970 /* Roboto-LightItalic.ttf in Resources */,
+				84F3766C21718B0400A5B970 /* RobotoCondensed-LightItalic.ttf in Resources */,
+				84F3766121718B0400A5B970 /* Apache License.txt in Resources */,
+				84F3766321718B0400A5B970 /* Roboto-Thin.ttf in Resources */,
 				84F3761E21718AB300A5B970 /* Main.storyboard in Resources */,
+				84F3766421718B0400A5B970 /* Roboto-Regular.ttf in Resources */,
+				84F3766221718B0400A5B970 /* Roboto-Italic.ttf in Resources */,
+				84F3766721718B0400A5B970 /* RobotoCondensed-Regular.ttf in Resources */,
+				84F3766921718B0400A5B970 /* Roboto-MediumItalic.ttf in Resources */,
+				84F3765B21718B0400A5B970 /* Roboto-BlackItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,13 +541,106 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2FD24EDF5E8679BBBCE1595D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChatChatChatTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6DC9E2BE82FA8CFA41A0EEB8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChatChatChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB239EFBC3BF993E3D362E32 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChatChatChatUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D11393260CCFE90BF1FDC9EA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ChatChatChat/Pods-ChatChatChat-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChatChatChat/Pods-ChatChatChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		84F3761121718AB300A5B970 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84EC3FE52174712A00BC2E7D /* PostTableViewCell.swift in Sources */,
+				84CB047521747716009525B2 /* APIRequestProvider.swift in Sources */,
+				84EC3FE9217471AF00BC2E7D /* PostDTOs.swift in Sources */,
+				84CB047B21748A6F009525B2 /* FirstPresenter.swift in Sources */,
+				84EC3FD92174505B00BC2E7D /* User.swift in Sources */,
+				84F37675217196DB00A5B970 /* BeginViewController.swift in Sources */,
 				84F3761B21718AB300A5B970 /* ViewController.swift in Sources */,
+				84ED2F742175815600176011 /* AlamofireViewController.swift in Sources */,
+				84CB04712174765C009525B2 /* APIServiceAgent.swift in Sources */,
+				84CB047921748927009525B2 /* GetPostService.swift in Sources */,
+				84CB047E21748FB3009525B2 /* PostViewController.swift in Sources */,
+				84EC3FEB217472F200BC2E7D /* Post.swift in Sources */,
 				84F3761921718AB300A5B970 /* AppDelegate.swift in Sources */,
+				84EC3FDC217450D600BC2E7D /* VCPresenter.swift in Sources */,
+				84CB04772174775B009525B2 /* PostServices.swift in Sources */,
+				84CB0473217476E6009525B2 /* APIServiceObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +811,7 @@
 		};
 		84F3763E21718AB500A5B970 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 036F4965D6E0B9272C6DB5B1 /* Pods-ChatChatChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -445,6 +829,7 @@
 		};
 		84F3763F21718AB500A5B970 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA8E1B133550A912607FEC74 /* Pods-ChatChatChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -462,6 +847,7 @@
 		};
 		84F3764121718AB500A5B970 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8561CE7585D56D40925B0218 /* Pods-ChatChatChatTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -482,6 +868,7 @@
 		};
 		84F3764221718AB500A5B970 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DFEE7734D6177ABB461C451 /* Pods-ChatChatChatTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -502,6 +889,7 @@
 		};
 		84F3764421718AB500A5B970 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 224CC9D9692FBF643D4C851A /* Pods-ChatChatChatUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -521,6 +909,7 @@
 		};
 		84F3764521718AB500A5B970 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35E51359E36B5F19B0A49ECA /* Pods-ChatChatChatUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

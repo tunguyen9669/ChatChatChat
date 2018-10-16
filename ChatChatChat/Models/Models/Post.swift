@@ -7,3 +7,17 @@
 //
 
 import Foundation
+
+class Post: NSObject {
+    var userID: Int
+    var id: Int
+    var title: String
+    var body: String
+    
+    init(_ postDto: PostsDTO) {
+        self.userID = postDto.userID
+        self.id = postDto.id
+        self.title = postDto.title
+        self.body = postDto.body
+    }
+}

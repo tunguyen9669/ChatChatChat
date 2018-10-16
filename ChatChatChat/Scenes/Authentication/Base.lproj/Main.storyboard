@@ -66,6 +66,9 @@
                                 <state key="normal" title="Đăng nhập">
                                     <color key="titleColor" red="0.0" green="0.71764705880000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="onLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uhu-4T-yCI"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phiên bản 1.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f1G-dC-puP">
                                 <rect key="frame" x="144" y="544" width="86" height="18.5"/>
@@ -82,9 +85,16 @@
                                 <color key="textColor" red="1" green="0.9606539838" blue="0.98284774990000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="error messaging" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GuJ-tF-Bf0">
+                                <rect key="frame" x="20" y="50" width="335" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.9778180803571429" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.71764705882352942" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="GuJ-tF-Bf0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="05Y-wF-IHq"/>
                             <constraint firstItem="zId-PH-u4S" firstAttribute="leading" secondItem="3GM-zF-FbV" secondAttribute="trailing" constant="-30" id="0bU-QT-TMs"/>
                             <constraint firstItem="f1G-dC-puP" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="2Za-C1-TpA"/>
                             <constraint firstItem="zId-PH-u4S" firstAttribute="centerY" secondItem="3GM-zF-FbV" secondAttribute="centerY" id="3CB-oY-zPA"/>
@@ -99,10 +109,12 @@
                             <constraint firstItem="qWD-Mm-dfW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Q1L-G0-OB4"/>
                             <constraint firstItem="JJm-e5-AoH" firstAttribute="trailing" secondItem="fk3-kU-s5T" secondAttribute="trailing" id="Un1-5s-MbM"/>
                             <constraint firstItem="yVM-7H-Wa8" firstAttribute="top" secondItem="3GM-zF-FbV" secondAttribute="bottom" constant="20" id="c8a-Sh-RG7"/>
+                            <constraint firstItem="GuJ-tF-Bf0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="cSq-Rm-acl"/>
                             <constraint firstItem="3GM-zF-FbV" firstAttribute="top" secondItem="fZx-mz-fzY" secondAttribute="bottom" constant="8" id="cgO-mh-XQ7"/>
                             <constraint firstItem="JJm-e5-AoH" firstAttribute="top" secondItem="fk3-kU-s5T" secondAttribute="bottom" constant="8" id="cwZ-4c-uzS"/>
                             <constraint firstItem="3GM-zF-FbV" firstAttribute="trailing" secondItem="fZx-mz-fzY" secondAttribute="trailing" id="eHO-1k-Ng1"/>
                             <constraint firstItem="fZx-mz-fzY" firstAttribute="leading" secondItem="JJm-e5-AoH" secondAttribute="leading" id="elu-sW-2d9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GuJ-tF-Bf0" secondAttribute="trailing" constant="20" id="nfx-4z-F7N"/>
                             <constraint firstItem="f1G-dC-puP" firstAttribute="top" secondItem="qWD-Mm-dfW" secondAttribute="bottom" constant="60" id="pCM-xd-Om5"/>
                             <constraint firstItem="fZx-mz-fzY" firstAttribute="trailing" secondItem="JJm-e5-AoH" secondAttribute="trailing" id="pb7-Iv-vbv"/>
                             <constraint firstItem="3GM-zF-FbV" firstAttribute="leading" secondItem="fZx-mz-fzY" secondAttribute="leading" id="tDh-ph-eLw"/>
@@ -112,6 +124,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="JJm-e5-AoH" id="mDF-g4-smP"/>
+                        <outlet property="passwordTextField" destination="3GM-zF-FbV" id="ssy-xm-7Me"/>
+                        <outlet property="warningLabel" destination="GuJ-tF-Bf0" id="it9-UP-5pa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
